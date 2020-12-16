@@ -7,7 +7,7 @@ frappe.ui.form.on('Traccar Server', {
 			frappe.call({
 				method: "traccar.api.sync",
 				args:{
-					server: "Tracking Paymatic"
+					server: frm.doc.name 
 				},
 				callback: function(r) {
 				}

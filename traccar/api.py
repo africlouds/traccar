@@ -8,7 +8,8 @@ def sync(server):
     #1: get groups from traccar
     #2: for each group, check if a correspong customer exists
     #3: if customer doesnt exists create customers
-    enqueue("traccar.api.sync_bg", server=server)
+    #enqueue("traccar.api.sync_bg", server=server)
+    sync_bg(server)
 
 def sync_bg(server):
     #1: get groups from traccar
